@@ -1,0 +1,74 @@
+.header {
+    padding-top: 20px;
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (min-width: 768px) {
+            & {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        @media (min-width: 1200px) {
+            & {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        &__item--tablet {
+            display: none;
+            @media (min-width: 768px) {
+                & {
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    display: block;
+                }
+            }
+            @media (min-width: 1200px) {
+                & {
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    display: block;
+                }
+            }
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            &__item {
+                color: #FFF;
+                font-family: 'Montserrat';
+                font-size: 13.986px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-decoration: none;
+            }
+            &__item:nth-child(2) {
+                background: none;
+                border: 2px solid white;
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+        }
+        
+    }
+}
+

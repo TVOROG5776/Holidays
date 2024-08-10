@@ -1,0 +1,112 @@
+.partners {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    .partners-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        &__title {
+            width: 288px;
+            color: #333;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-size: 22.004px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @media (min-width: 768px) {
+                & {
+                    color: #333;
+                    font-family: 'Montserrat';
+                    font-size: 22.004px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    width: 431px;
+                }
+            }
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            @media (min-width: 768px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 50px;
+                }
+            }
+            @media (min-width: 1200px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    gap: 40px;
+                }
+            }
+            .card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                &__title {
+                    color: #333;
+                    font-family: 'Montserrat';
+                    font-size: 14.011px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                &__description {
+                    color: #666;
+                    text-align: center;
+                    font-family: 'Roboto';
+                    font-size: 14.011px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    width: 247px;
+                }
+            }
+            @media (min-width: 1200px) {
+                .card:nth-child(1) {
+                    order: 1;
+                }
+                .card:nth-child(2) {
+                    order: 3;
+                }
+                .card:nth-child(3) {
+                    order: 2;
+                }
+                .card:nth-child(4) {
+                    order: 4;
+                }
+            }   
+        }
+        &__button {
+            color: #FF4E50;
+            font-family: 'Montserrat';
+            font-size: 14.001px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            background: none;
+            padding: 10px 60px;
+            border: 2px solid #FF4E50;
+            border-radius: 20px;
+            @media (min-width: 768px) {
+                & {
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
+}

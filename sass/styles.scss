@@ -1,0 +1,42 @@
+@import './components/header';
+@import './components/main/main-styles';
+@import './components/footer';
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 320px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.background {
+    background: url(../images/hero.png) no-repeat center / cover;
+    @media (min-width: 768px) {
+        background: url(../images/tablet.png) no-repeat center / cover;
+    }
+    @media (min-width: 1200px) {
+        background:  url(../images/dekstop.png) no-repeat center/ cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
